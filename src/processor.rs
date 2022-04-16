@@ -6,10 +6,9 @@ use solana_program::{
     pubkey::Pubkey,
     program_pack::{Pack, IsInitialized},
     sysvar::{rent::Rent, Sysvar},
-    program::{invoke,invoke_signed}
+    program::invoke
 };
 
-use spl_token::state::Account as TokenAccount ;
 use crate::{instruction::EscrowInstruction, error::EscrowError, state::Escrow};
 
 pub struct Processor;

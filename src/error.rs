@@ -19,7 +19,6 @@ pub enum EscrowError {
   #[error("Amount Overflow")]
   AmountOverflow,
 
-
 }
 
 impl From<EscrowError> for ProgramError {
